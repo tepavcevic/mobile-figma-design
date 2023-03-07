@@ -1,0 +1,13 @@
+.header {
+  text-align: center;
+}
+
+.page-title {
+  display: inline;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.search-icon {
+  height: 22px;
+}
