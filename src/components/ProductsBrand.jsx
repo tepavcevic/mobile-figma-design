@@ -1,7 +1,8 @@
-export default function ProductsBrand() {
+export default function ProductsBrand({ brand, numberOfItems }) {
     return(
         <div>
-            Nike
+            <p>{brand}</p>
+            <p>{numberOfItems}</p>
         </div>
     )
 }

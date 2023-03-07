@@ -1,7 +1,8 @@
-export default function Product() {
+export default function Product({ model, price }) {
     return(
         <div className="product-card">
-            Nike Air Hagoto
+            <p>{model}</p>
+            <p>${price}</p>
         </div>
     )
 }

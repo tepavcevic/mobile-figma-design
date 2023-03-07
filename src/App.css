@@ -1,13 +1,67 @@
 .header {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  background-color: #F2F2F7;
 }
 
 .page-title {
   display: inline;
+  align-self: center;
   font-size: 17px;
-  font-weight: 500;
+  font-weight: 400;
+  padding: 10px;
 }
 
 .search-icon {
-  height: 22px;
+  width: 22px;
+  padding-right: 10px;
+}
+
+.recent-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+.recent-title h3 {
+  font-weight: 500;
+}
+
+.recent-list {
+  display: flex;
+}
+
+.recent-item {
+  padding: 0 8px;
+  margin: auto;
+  text-align: center;
+}
+
+.recent-brand-name {
+  margin-top: 5px;
+}
+
+.round-picture {
+  height: 80px;
+  border-radius: 50%;
+}
+
+.main-heading {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.main-slogan {
+  max-width: 340px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.product-group-list {
+  display: flex;
+  justify-content: space-between;
 }
