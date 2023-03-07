@@ -32,10 +32,12 @@
 
 .recent-list {
   display: flex;
+  align-items: center;
+  overflow-x: scroll;
 }
 
 .recent-item {
-  padding: 0 8px;
+  padding: 0 15px;
   margin: auto;
   text-align: center;
 }
@@ -61,7 +63,21 @@
   margin: 0 auto;
 }
 
-.product-group-list {
+.products-list {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  overflow-x: scroll;
+}
+
+.product-brand-card {
+  text-align: center;
+  padding: 41px 28px;
+  margin: 0;
+  border: thin solid #3c3c4329;
+}
+
+.product-card {
+  border: thin solid #3c3c4329;
+  width: 163px;
+  height: 264px;
 }

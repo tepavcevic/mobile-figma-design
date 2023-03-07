@@ -1,6 +1,12 @@
 import './App.css'
+import { products } from "./data/products"
+import { brands } from "./data/brands"
 import ProductsList from './components/ProductsList'
+import ProductsBrand from "./components/ProductsBrand"
 import RecentlyViewedList from "./components/RecentlyViewedList"
+
+const nike = products.filter(product => product.brand === "Nike");
+const adidas = products.filter(product => product.brand === "Adidas"); 
 
 function App() {
   return (
@@ -23,7 +29,20 @@ function App() {
           of astronomy and our desire.</p>
         </div>
 
-        <ProductsList />
+        <div className="products-list">
+          <ProductsBrand 
+              brandImage={brands[0].photo}
+              brand={brands[0].name}
+              numberOfItems={nike.length}
+          />
+          {nike.slice(0, 2).map(shoe =>
+            <ProductsList
+              model={shoe.model}
+              price={shoe.price}
+            />
+          )}
+        </div>
+        
       </main>
     </div>
   )
