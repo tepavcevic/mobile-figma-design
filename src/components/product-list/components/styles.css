@@ -4,7 +4,7 @@
   align-items: center;
   margin: 0;
   padding: 36px 41px;
-  border: thin solid #3c3c4329;
+  border: thin solid rgba(60, 60, 67, 0.29);
 }
 
 .product-brand-card-title {
@@ -24,14 +24,16 @@
 
 .product-card {
   text-align: center;
-  border: thin solid #3c3c4329;
+  border: 1px solid rgba(60, 60, 67, 0.29);
   width: 163px;
   height: 264px;
+  z-index: auto;
 }
 
 .product-image {
-  width: 100%;
-  z-index: 5;
+  width: 165px;
+  margin: -2px;
+  z-index: 2;
 }
 
 .shoe-model-title {
