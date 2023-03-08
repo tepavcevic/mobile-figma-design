@@ -1,0 +1,42 @@
+.product-brand-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 36px 41px;
+  border: thin solid #3c3c4329;
+}
+
+.product-brand-card-title {
+  font-size: 15px;
+  font-weight: 500;
+  margin: 8px 0 0 0;
+}
+
+.product-brand-card-items {
+  font-size: 13px;
+  margin: 0 0 34px 0;
+}
+
+.heart-icon {
+  width: 28px;
+}
+
+.product-card {
+  text-align: center;
+  border: thin solid #3c3c4329;
+  width: 163px;
+  height: 264px;
+}
+
+.product-image {
+  width: 100%;
+  z-index: 5;
+}
+
+.shoe-model-title {
+  width: 60%;
+  margin: 18px auto;
+  font-size: 15px;
+  font-weight: 500;
+}

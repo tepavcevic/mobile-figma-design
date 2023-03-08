@@ -1,8 +1,8 @@
-import RecentlyViewedItem from "./RecentlyViewedItem"
-import { brands } from "../data/brands"
+import "./styles.css"
 
+import RecentlyViewedItem from "./components/RecentlyViewedItem"
 
-export default function RecentlyViewedList() {
+export default function RecentlyViewedList({ brands }) {
     return(
         <>
             <div className="recent-title">

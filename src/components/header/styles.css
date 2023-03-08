@@ -1,0 +1,24 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    background-color: #F2F2F7;
+  }
+  
+  .page-title {
+    display: inline;
+    align-self: center;
+    font-size: 17px;
+    font-weight: 400;
+    padding: 10px;
+  }
+  
+  .search-icon {
+    width: 22px;
+    padding-right: 10px;
+  }
+  
+  .header-left {
+    width: 32px;
+  }

@@ -1,0 +1,14 @@
+.recent-item {
+    padding: 0 12px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .recent-item:first-child {
+    padding-left: 16px;
+  }
+  
+  .recent-brand-name {
+    font-size: 17px;
+    margin-top: 5px;
+  }

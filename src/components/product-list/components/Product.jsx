@@ -1,3 +1,5 @@
+import "./styles.css"
+
 export default function Product({ model, price, modelImage }) {
     return(
         <div className="product-card">

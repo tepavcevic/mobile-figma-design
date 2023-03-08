@@ -1,3 +1,5 @@
+import "./styles.css"
+
 export default function RecentlyViewedItem({ brandName, photo }) {
     return(
         <div className="recent-item">
