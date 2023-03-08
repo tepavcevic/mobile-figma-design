@@ -15,21 +15,20 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <main className="container">
-        <RecentlyViewedList brands={brands}/>
 
-        <div className="main-slogan">
-          <h1 className="main-heading">Summer top</h1>
-          <p className="main-description">It is those feelings that drive our love 
-            of astronomy and our desire.</p>
-        </div>
+      <RecentlyViewedList brands={brands}/>
 
-        <div className="products-list">
-          <ProductList productBrand={nikeProducts} shoeBrand={nikeBrand} />
+      <div className="main-slogan">
+        <h1 className="main-heading">Summer top</h1>
+        <p className="main-description">It is those feelings that drive our love 
+          of astronomy and our desire.</p>
+      </div>
 
-          <ProductList productBrand={adidasProducts} shoeBrand={adidasBrand}/>
-        </div>
-      </main>
+      <div className="products-list">
+        <ProductList productBrand={nikeProducts} shoeBrand={nikeBrand} />
+
+        <ProductList productBrand={adidasProducts} shoeBrand={adidasBrand}/>
+      </div>
     </div>
   )
 }
