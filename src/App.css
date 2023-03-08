@@ -19,6 +19,10 @@
   padding-right: 10px;
 }
 
+.header-left {
+  width: 32px;
+}
+
 .recent-title {
   display: flex;
   align-items: center;
@@ -37,12 +41,17 @@
 }
 
 .recent-item {
-  padding: 0 15px;
+  padding: 0 12px;
   margin: auto;
   text-align: center;
 }
 
+.recent-item:first-child {
+  padding-left: 16px;
+}
+
 .recent-brand-name {
+  font-size: 17px;
   margin-top: 5px;
 }
 
@@ -60,24 +69,58 @@
 .main-slogan {
   max-width: 340px;
   text-align: center;
-  margin: 0 auto;
+  margin: 25px auto;
 }
 
 .products-list {
-  display: flex;
-  align-items: center;
   overflow-x: scroll;
+  margin-bottom: 20px;
+}
+
+.brand-products-list {
+  display: flex;
+  align-content: center;
 }
 
 .product-brand-card {
-  text-align: center;
-  padding: 41px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 0;
+  padding: 35px 41px;
   border: thin solid #3c3c4329;
 }
 
+.product-brand-card-title {
+  font-size: 15px;
+  font-weight: 500;
+  margin: 8px 0 0 0;
+}
+
+.product-brand-card-items {
+  font-size: 13px;
+  margin: 0 0 34px 0;
+}
+
+.heart-icon {
+  width: 28px;
+}
+
 .product-card {
+  text-align: center;
   border: thin solid #3c3c4329;
   width: 163px;
   height: 264px;
+}
+
+.product-image {
+  width: 100%;
+  z-index: 5;
+}
+
+.shoe-model-title {
+  width: 60%;
+  margin: 18px auto;
+  font-size: 15px;
+  font-weight: 500;
 }
