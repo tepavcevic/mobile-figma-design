@@ -17,7 +17,7 @@ export default function RecentlyViewedList({ brands }) {
       <RecentTitle />
       <div className="recent-list">
         {brands.map((brand) => (
-          <RecentlyViewedItem brandName={brand.name} photo={brand.photo} />
+          <RecentlyViewedItem brandName={brand.name} brandImage={brand.photo} />
         ))}
       </div>
     </StyledRecentlyViewed>

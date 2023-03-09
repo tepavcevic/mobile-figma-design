@@ -1,5 +1,3 @@
-import "./App.css";
-
 import { products } from "./data/products";
 import { brands } from "./data/brands";
 import Header from "./components/header/Header";

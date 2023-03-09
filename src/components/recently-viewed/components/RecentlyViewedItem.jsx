@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import BrandImage from "../../../shared-components/BrandImage";
 
 const Item = styled.div`
   display: block;
@@ -20,10 +21,10 @@ const Item = styled.div`
   }
 `;
 
-export default function RecentlyViewedItem({ brandName, photo }) {
+export default function RecentlyViewedItem({ brandName, brandImage }) {
   return (
     <Item>
-      <img src={photo} alt={`${brandName} logo`} className="round-picture" />
+      <BrandImage src={brandImage} alt={brandName} />
       <p>{brandName}</p>
     </Item>
   );
