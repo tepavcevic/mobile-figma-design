@@ -2,23 +2,3 @@
   height: 80px;
   border-radius: 50%;
 }
-
-.main-heading {
-  text-align: center;
-  font-size: 22px;
-  font-weight: 500;
-}
-
-.main-slogan {
-  max-width: 340px;
-  text-align: center;
-  margin: 25px auto;
-}
-
-.products-list {
-  overflow-x: scroll;
-  margin-bottom: 20px;
-  border-color: rgba(60, 60, 67, 0.29);
-  border-style: solid;
-  border-width: 1px 0 0 0;
-}
