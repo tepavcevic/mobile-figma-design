@@ -11,13 +11,17 @@ const StyledRecentlyViewed = styled.div`
 
 import RecentlyViewedItem from "./components/RecentlyViewedItem";
 
-export default function RecentlyViewedList({ brands }) {
+export default function RecentlyViewedList({ data }) {
   return (
     <StyledRecentlyViewed>
       <RecentTitle />
       <div className="recent-list">
-        {brands.map((brand) => (
-          <RecentlyViewedItem brandName={brand.name} brandImage={brand.photo} />
+        {data.map((brand) => (
+          <RecentlyViewedItem
+            brandName={brand.brandName}
+            brandImage={brand.brandImage}
+            key={brand.brandId}
+          />
         ))}
       </div>
     </StyledRecentlyViewed>

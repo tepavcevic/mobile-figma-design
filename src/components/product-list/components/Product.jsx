@@ -26,17 +26,17 @@ const ProductCardBody = styled.div`
   }
 `;
 
-export default function Product({ model, price, modelImage }) {
+export default function Product({ product }) {
   return (
     <ProductCard>
       <img
         className="product-image"
-        src={modelImage}
+        src={product.productImage}
         alt="sneaker model image"
       />
       <ProductCardBody>
-        <p className="product-model-title">{model}</p>
-        <p className="product-model-price">${price}</p>
+        <p className="product-model-title">{product.productModel}</p>
+        <p className="product-model-price">${product.productPrice}</p>
       </ProductCardBody>
     </ProductCard>
   );

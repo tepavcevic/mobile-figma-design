@@ -1,5 +1,4 @@
-import { products } from "./data/products";
-import { brands } from "./data/brands";
+import { data } from "./data/data";
 import Header from "./components/header/Header";
 import PageTitle from "./components/page-title/PageTitle";
 import RecentlyViewedList from "./components/recently-viewed/RecentlyViewedList";
@@ -14,23 +13,19 @@ const ProductTable = styled.div`
   border-width: 1px 0 0 0;
 `;
 
-const nikeBrand = brands.find((brand) => brand.name === "Nike");
-const adidasBrand = brands.find((brand) => brand.name === "Adidas");
-const nikeProducts = products.filter((product) => product.brand === "Nike");
-const adidasProducts = products.filter((product) => product.brand === "Adidas");
-
 function App() {
   return (
     <div className="App">
       <Header />
 
-      <RecentlyViewedList brands={brands} />
+      <RecentlyViewedList data={data} />
 
       <PageTitle />
 
       <ProductTable>
-        <ProductList productBrand={nikeProducts} shoeBrand={nikeBrand} />
-        <ProductList productBrand={adidasProducts} shoeBrand={adidasBrand} />
+        {data.map((brand) => (
+          <ProductList brand={brand} key={brand.brandId} />
+        ))}
       </ProductTable>
     </div>
   );

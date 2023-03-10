@@ -7,24 +7,24 @@ const List = styled.div`
   align-items: center;
 `;
 
-export default function ProductList({ productBrand, shoeBrand }) {
+export default function ProductList({ brand }) {
   return (
-    <List>
-      <ProductBrand
-        brandImage={shoeBrand.photo}
-        brand={shoeBrand.name}
-        numberOfItems={productBrand.length}
-      />
-
-      <List>
-        {productBrand.slice(0, 3).map((shoe) => (
-          <Product
-            model={shoe.model}
-            price={shoe.price}
-            modelImage={shoe.modelImage}
+    <>
+      {brand.products && (
+        <List>
+          <ProductBrand
+            brandImage={brand.brandImage}
+            brand={brand.brandName}
+            numberOfItems={brand.products.length}
           />
-        ))}
-      </List>
-    </List>
+
+          <List>
+            {brand.products.slice(0, 3).map((product) => (
+              <Product product={product} key={product.productId} />
+            ))}
+          </List>
+        </List>
+      )}
+    </>
   );
 }
